@@ -6,7 +6,7 @@ type State = {
 }
 type Action ={
   type: "START_REQUEST" | "PENDING_REQUEST"  | "FINISH_REQUEST" | 'RESET_REQUEST',
-  run:()=>void;
+  //run:()=>void; в завданні писало, що екшон має могти виконуватись, тож я імпровізував
 }
 
 

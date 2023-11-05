@@ -1,4 +1,4 @@
-import React, { createContext, useMemo, useState, useContext } from "react";
+import React, { createContext, useMemo, useState, useContext, ReactNode } from "react";
 import noop from "lodash/noop";
 
 type MenuIds = "first" | "second" | "last";
@@ -6,7 +6,7 @@ type Menu = { id: MenuIds; title: string };
 
 // Додати тип Menu Selected
 
-type SelectedMenu = {id:MenuIds}
+type SelectedMenu = {id?:MenuIds}
 
 type  MenuSelected={selectedMenu:SelectedMenu}
 

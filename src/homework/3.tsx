@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 
 export function FormComponent() {
   const [value, setValue] = useState("");
 
-  const handleChange = (event:SyntheticEvent) => {
-    setValue(event.target.value);
+  const handleChange = (event:ChangeEvent) => {
+    if(event.target.nodeValue)
+      setValue(event.target.nodeValue);
   };
 
   return (
